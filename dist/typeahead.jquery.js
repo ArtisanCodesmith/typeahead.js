@@ -566,7 +566,7 @@
                 return this.$input.val();
             },
             setInputValue: function setInputValue(value) {
-                this.$input.val(value).trigger('change');
+                this.$input.val(value).trigger('change').trigger('keyup');
                 this.clearHintIfInvalid();
                 this._checkLanguageDirection();
             },
